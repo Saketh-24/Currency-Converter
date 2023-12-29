@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.bg
+{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.92;
+    position: absolute;
+    width: 100%;
+}
+
+.color
+{
+    background-color: black;
+}
+
+
+body{
+    height: 100vh;
+}
+
+.label
+{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: larger;
+    font-weight: 400;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.container
+{
+    background-color: rgba(53, 53, 84, 0.663);
+    padding: 2rem;
+    padding-top: 1rem;
+    width: 500px;
+    position: relative;
+    left: 480px;
+    top: 180px;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+
+.dropdown
+{
+    padding-bottom: 2rem;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+p{
+    margin-bottom: 0px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+img{
+    display: block;
+}
+
+.exchange-icon
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.info
+{
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
+button:hover
+{
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+select:hover
+{
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.footer
+{
+    text-align: center;
+}
+
+button,select,input,option
+{
+    padding: 0.45rem;
+    border-radius: 9px;
+    background-color: #f1f3f4;
+    font-weight: 600;
+    color: black;
+    border: 3px solid transparent;
+}
+
+.select-container>img{
+     position: relative;
+     left: 18px;
+}
+
+select
+{
+    width: 105px;
+      
+}
+
+select::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+  }
+  
+  select::-webkit-scrollbar-thumb {
+    background-color: #888; /* Adjust the color as needed */
+    border-radius: 6px; /* Optional: round the corners */
+  }
+  
+  select::-webkit-scrollbar-track {
+    background-color: #f1f3f4; /* Adjust the color as needed */
+  }
+  

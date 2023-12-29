@@ -1,0 +1,21 @@
+@media screen and (max-width: 400px) {
+    
+    img
+    {
+        position: absolute;
+        width: 100%;
+    }
+
+    .container
+    {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+    
+    .dropdown
+    {
+        justify-content: flex-start;
+        gap: 92px;
+    }
+}
