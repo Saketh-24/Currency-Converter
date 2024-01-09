@@ -6,6 +6,7 @@ const btn = document.querySelector("button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".info");
+const exchange = document.querySelector(".fa-solid");
 
 for(sel of dropdowns)
 {
@@ -40,7 +41,7 @@ const updateFlag=(element)=>
 const updateExchangeRate = async () => {
   let amount = document.querySelector("input");
   let amtVal = amount.value;
-  if (amtVal === "" || amtVal < 1) {
+  if (amtVal === "" || amtVal < 1){
     amtVal = 1;
     amount.value = "1";
   }
@@ -50,7 +51,7 @@ const updateExchangeRate = async () => {
   let rate = data[toCurr.value.toLowerCase()];
 
   let finalAmount = amtVal * rate;
-  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  msg.innerText = `"${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}" As of Today`;
 };
 
  
@@ -59,3 +60,15 @@ btn.addEventListener("click", (evt) => {
   updateExchangeRate();
 });
 
+
+// eventlistner to swap the flags
+exchange.addEventListener("click",(evt)=>
+{
+  let temp = fromCurr.value;
+  fromCurr.value = toCurr.value;
+  updateFlag(fromCurr);
+  toCurr.value = temp;
+  updateFlag(toCurr);
+  updateExchangeRate();
+
+});
